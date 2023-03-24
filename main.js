@@ -12,5 +12,8 @@ const main = async () => {
 
   // ReferenceError: hello is not defined
   await load('./functionDeclarationModule.js', sandbox);
+
+  const result = await load('./metarhiaStyleModule.js', sandbox);
+  console.log({ result });
 };
 main();
